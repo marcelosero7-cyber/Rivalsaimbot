@@ -1,21 +1,8 @@
-local message = "more script keyless here https://discord.gg/yX7tyWCR"
-setclipboard(message)
-game.StarterGui:SetCore("SendNotification", {
-Title = "Clipboard";
-Text = "use snaiper for best resultate more scripts keyless here!";
-Duration = 5;
+local Message = Instance.new("Message", workspace)
+Message.Text = "⚠️ This script has been closed after an update.\nJoin our Discord!"
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Script Closed",
+    Text = "Join our Discord! Link copied ",
+    Duration = 8
 })
-
-
-local v0=game:GetService("Players");local v1=game:GetService("RunService");local v2=game:GetService("UserInputService");local v3=workspace.CurrentCamera;local v4=v0.LocalPlayer;local v5=320 -200 ;local v6=false;local v7=nil;local v8=Instance.new("ScreenGui",game.CoreGui);v8.Name="CamlockUI";local v10=Instance.new("TextButton");v10.Size=UDim2.new(0 + 0 ,500 -(87 + 263) ,0,220 -(67 + 113) );v10.Position=UDim2.new(1423 -(630 + 793) ,20,0 + 0 ,49 -29 );v10.BackgroundColor3=Color3.fromRGB(56 + 19 ,0 -0 ,1082 -(802 + 150) );v10.TextColor3=Color3.fromRGB(686 -431 ,2168 -(1789 + 124) ,462 -207 );v10.Font=Enum.Font.GothamBold;v10.TextSize=16;v10.Text="algolCam: OFF";v10.Parent=v8;local function v20(v29) v2.MouseBehavior=(v29 and Enum.MouseBehavior.LockCenter) or Enum.MouseBehavior.Default ;end local function v21() local v31=nil;local v32=math.huge;local v33=Vector2.new(v3.ViewportSize.X/(2 + 0) ,v3.ViewportSize.Y/(999 -(915 + 82)) );for v36,v37 in pairs(v0:GetPlayers()) do if ((v37~=v4) and v37.Character and v37.Character:FindFirstChild("Head")) then local v43=0 -0 ;local v44;local v45;local v46;local v47;local v48;while true do if (v43==(2 + 0)) then if (v46 and (v47<v32) and (v48<=v5)) then local v61=0 -0 ;while true do if ((0 -0)==v61) then v32=v47;v31=v37;break;end end end break;end if (v43==(1187 -(1069 + 118))) then v44=v37.Character.Head;v45,v46=v3:WorldToViewportPoint(v44.Position);v43=1;end if (v43==(2 -1)) then v47=(Vector2.new(v45.X,v45.Y) -v33).Magnitude;v48=(v44.Position-v3.CFrame.Position).Magnitude;v43=2;end end end end return v31;end v10.MouseButton1Click:Connect(function() if  not v6 then local v38=0;local v39;while true do if (v38==(0 -0)) then v39=v21();if (v39 and v39.Character and v39.Character:FindFirstChild("Head")) then local v56=0;while true do if (v56==(1 + 0)) then v10.Text="AlgolCam: ON";v20(true);break;end if (v56==(1055 -(87 + 968))) then v7=v39;v6=true;v56=1 -0 ;end end else local v57=0 -0 ;local v58;while true do if (v57==(0 + 0)) then v58=0;while true do if (v58==(0 -0)) then v10.Text="No Target!";task.wait(1414 -(447 + 966) );v58=2 -1 ;end if (v58==(1 + 0)) then v10.Text="AlgolCam: OFF";break;end end break;end end end break;end end else local v40=701 -(376 + 325) ;while true do if (v40==(791 -(368 + 423))) then v6=false;v7=nil;v40=3 -2 ;end if ((1 -0)==v40) then v10.Text="AlgolCam: OFF";v20(false);break;end end end end);v1.RenderStepped:Connect(function() if (v6 and v7 and v7.Character and v7.Character:FindFirstChild("Head")) then local v41=18 -(10 + 8) ;local v42;while true do if (v41==(0 -0)) then v42=v7.Character.Head;v3.CFrame=CFrame.new(v3.CFrame.Position,v42.Position);break;end end elseif v6 then local v49=442 -(416 + 26) ;while true do if (v49==(6 -4)) then v10.Text="Algolcam: OFF";break;end if ((1 + 0)==v49) then v20(false);task.wait(377 -(85 + 291) );v49=3 -1 ;end if ((0 -0)==v49) then v10.Text="Lost Target!";v6=false;v49=439 -(145 + 293) ;end end end end);local v22=Instance.new("UICorner",v10);v22.CornerRadius=UDim.new(430 -(44 + 386) ,1498 -(998 + 488) );local v24=Instance.new("UIStroke",v10);v24.Thickness=1 + 1 ;v24.Color=Color3.fromRGB(164 + 36 ,972 -(201 + 571) ,509 -(163 + 91) );local v27=Instance.new("UIGradient",v10);v27.Color=ColorSequence.new({ColorSequenceKeypoint.new(0 + 0 ,Color3.fromRGB(352 -252 ,0 -0 ,21 + 129 )),ColorSequenceKeypoint.new(1,Color3.fromRGB(657 -477 ,0 -0 ,1114 -(814 + 45) ))});v10.MouseEnter:Connect(function() v10.BackgroundColor3=Color3.fromRGB(295 -175 ,0 + 0 ,918 -(15 + 703) );end);v10.MouseLeave:Connect(function() v10.BackgroundColor3=Color3.fromRGB(75,0 + 0 ,130);end);
--- â ď¸ WARNING: integrity protected!
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
-
-]]--
+setclipboard("https://discord.gg/yX7tyWCR")
