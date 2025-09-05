@@ -5,4 +5,4 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     Text = "Join our Discord! Link copied ",
     Duration = 8
 })
-setclipboard("https://discord.gg/yXfAsJ92")
+setclipboard("https://discord.gg/KXY9VTX4")
